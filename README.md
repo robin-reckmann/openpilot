@@ -34,7 +34,7 @@ You won't need to do anything besides opening the issue. We will add your finger
 
 ### Manually (fast)
 
-You can edit ./selfdrive/car/nissan/values.py and the results to FW_VERSIONS section. Once rebooted your car will kopefully get recognized by c2. Please open an issue anyway, to help us get your fingerprint into the next release.
+You can edit ./selfdrive/car/nissan/values.py and copy the results to the FW_VERSIONS section. Once rebooted your car will hopefully get recognized. Please open an issue anyway, to help us get your fingerprint into the next release.
 
 ## Uninstall
 Connect to your comma via ssh and execute the following commands:
