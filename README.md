@@ -1,5 +1,7 @@
 # Nissan Fingerprint V2 - Testing Fork
 
+**This is only possible thanks to martinl / mlp!** He put days of work into this and does not even own a nissan.
+
 ## Install
 You need to ssh into your device. Instructions on how to do that can be found here: https://github.com/commaai/openpilot/wiki/SSH
 
