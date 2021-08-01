@@ -16,6 +16,7 @@ reboot
 ## Add your Fingerprint for your car
 
 Follow the fingerprinting guide V2 still step 3: https://github.com/commaai/openpilot/wiki/Fingerprinting
+
 Next please open an issue and copy the results of step 3 into the issue. We will need this to create a pull request with as many V2 fingerprints as possible. Also this will help to tackle possible issues early, before the pull request to the comma repository gets upstreamed.
 
 ### By opening an issue (slow but easy)
@@ -26,7 +27,7 @@ You won't need to do anything besides opening the issue. We will add your finger
 
 You can edit ./selfdrive/car/nissan/values.py and the results to FW_VERSIONS section. Once rebooted your car will kopefully get recognized by c2. Please open an issue anyway, to help us get your fingerprint into the next release.
 
-## Back to old Installation
+## Uninstall
 Connect to your comma via ssh and execute the following commands:
 
 ```
