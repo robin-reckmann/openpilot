@@ -10,6 +10,9 @@ VIN_REQUEST = b'\x09\x02'
 VIN_RESPONSE = b'\x49\x02\x01'
 VIN_UNKNOWN = "0" * 17
 
+VIN_REQUEST_LEAF = b'\x21\x81'
+VIN_RESPONSE_LEAF = b'\x61\x81'
+
 
 def get_vin(logcan, sendcan, bus, timeout=0.1, retry=5, debug=False):
   for i in range(retry):
@@ -18,6 +21,15 @@ def get_vin(logcan, sendcan, bus, timeout=0.1, retry=5, debug=False):
       for addr, vin in query.get_data(timeout).items():
         return addr[0], vin.decode()
       print(f"vin query retry ({i+1}) ...")
+    except Exception:
+      cloudlog.warning(f"VIN query exception: {traceback.format_exc()}")
+
+    #custom query for Nissan Leaf
+    try:
+      query = IsoTpParallelQuery(sendcan, logcan, bus, 0x797, [VIN_REQUEST_LEAF], [VIN_RESPONSE_LEAF], response_offset=3, functional_addr=False, debug=debug)
+      for addr, vin in query.get_data(timeout).items():
+        return addr[0], vin.decode()
+      print(f"vin query leaf retry ({i+1}) ...")
     except Exception:
       cloudlog.warning(f"VIN query exception: {traceback.format_exc()}")
 
