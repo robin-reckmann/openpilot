@@ -69,6 +69,7 @@ FW_VERSIONS = {
     ],
     (Ecu.eps, 0x742, None): [
       b'5SH2A\x99A\x05\x02N123F\x15\x81\x00\x00\x00\x00\x00\x00\x00\x80',
+      b'5SK3A\x99A\x05\x02N123F\x25u\x00\x00\x00\x00\x00\x00\x00\x80',
     ],
     (Ecu.hvac, 0x744, None): [
       b'',
@@ -99,12 +100,14 @@ FW_VERSIONS = {
     ],
     (Ecu.engine, 0x797, None): [
       b'5SH4A\x03AB\x075SH4APSMT04\x00\x00\x00\x80',
+      b'5SK9B\x03AB\x075SK9BPSMI03\x00\x00\x00\x80',
     ],
     (Ecu.hvBattery, 0x79b, None): [
       b'',
     ],
     (Ecu.transmission, 0x79d, None): [
       b'5SA2B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x02\x06\x00\x00\x00\x80',
+      b'5SA3B\x04AB\x071\x03\x80\x22P\x02\x03D\x00\x01\x06\x00\x00\x00\x80',
     ],
   },
 }
