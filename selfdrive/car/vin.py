@@ -26,7 +26,7 @@ def get_vin(logcan, sendcan, bus, timeout=0.1, retry=5, debug=False):
 
     #custom query for Nissan Leaf
     try:
-      query = IsoTpParallelQuery(sendcan, logcan, bus, 0x797, [VIN_REQUEST_LEAF], [VIN_RESPONSE_LEAF], response_offset=3, functional_addr=False, debug=debug)
+      query = IsoTpParallelQuery(sendcan, logcan, bus, [0x797], [VIN_REQUEST_LEAF], [VIN_RESPONSE_LEAF], response_offset=3, functional_addr=False, debug=debug)
       for addr, vin in query.get_data(timeout).items():
         return addr[0], vin.decode()
       print(f"vin query leaf retry ({i+1}) ...")
