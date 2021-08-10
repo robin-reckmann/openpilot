@@ -61,17 +61,47 @@ FW_VERSIONS = {
   CAR.LEAF_IC: {
     # 2018 Leaf IC - UDM / @razemio
     # Ecu, addr, subaddr
-    #(Ecu.esp, 0x7b0, None): [
-    #  b'',
-    #],
+    (Ecu.brake, 0x70e, None): [
+      b'',
+    ],
+    (Ecu.vsp, 0x741, None): [
+      b'',
+    ],
     (Ecu.eps, 0x742, None): [
       b'5SH2A\x99A\x05\x02N123F\x15\x81\x00\x00\x00\x00\x00\x00\x00\x80',
     ],
-    #(Ecu.fwdCamera, 0x787, None): [
-    #  b'',
-    #],
+    (Ecu.hvac, 0x744, None): [
+      b'',
+    ],
+    (Ecu.bcm, 0x745, None): [
+      b'',
+    ],
+    (Ecu.tcu, 0x746, None): [
+      b'',
+    ],
+    (Ecu.multiAV, 0x747, None): [
+      b'',
+    ],
+    (Ecu.ipdmEr, 0x74d, None): [
+      b'',
+    ],
+    (Ecu.parkingBrake, 0x755, None): [
+      b'',
+    ],
+    (Ecu.motorControl, 0x784, None): [
+      b'',
+    ],
+    (Ecu.fwdCamera, 0x787, None): [
+      b'',
+    ],
+    (Ecu.charger, 0x792, None): [
+      b'',
+    ],
     (Ecu.engine, 0x797, None): [
       b'5SH4A\x03AB\x075SH4APSMT04\x00\x00\x00\x80',
+    ],
+    (Ecu.hvBattery, 0x79b, None): [
+      b'',
     ],
     (Ecu.transmission, 0x79d, None): [
       b'5SA2B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x02\x06\x00\x00\x00\x80',
