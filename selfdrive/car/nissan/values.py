@@ -79,7 +79,7 @@ FW_VERSIONS = {
     (Ecu.tcu, 0x746, None): [
       b'',
     ],
-    (Ecu.multiAV, 0x747, None): [
+    (Ecu.multiAv, 0x747, None): [
       b'',
     ],
     (Ecu.ipdmEr, 0x74d, None): [
