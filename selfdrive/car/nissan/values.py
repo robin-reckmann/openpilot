@@ -64,6 +64,9 @@ FW_VERSIONS = {
     (Ecu.brake, 0x70e, None): [
       b'',
     ],
+    (Ecu.esp, 0x740, None): [
+      b'',
+    ],
     (Ecu.vsp, 0x741, None): [
       b'',
     ],
@@ -108,6 +111,9 @@ FW_VERSIONS = {
     (Ecu.transmission, 0x79d, None): [
       b'5SA2B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x02\x06\x00\x00\x00\x80',
       b'5SA3B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x01\x06\x00\x00\x00\x80',
+    ],
+    (Ecu.avm, 0x7b2, None): [
+      b'',
     ],
   },
 }
