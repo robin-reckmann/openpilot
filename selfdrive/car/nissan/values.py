@@ -64,15 +64,18 @@ FW_VERSIONS = {
     (Ecu.brake, 0x70e, None): [
       b'',
     ],
-    (Ecu.esp, 0x740, None): [
+    (Ecu.vsp, 0x73f, None): [
       b'',
     ],
-    (Ecu.vsp, 0x741, None): [
+    (Ecu.esp, 0x740, None): [
       b'',
     ],
     (Ecu.eps, 0x742, None): [
       b'5SH2A\x99A\x05\x02N123F\x15\x81\x00\x00\x00\x00\x00\x00\x00\x80',
       b'5SK3A\x99A\x05\x02N123F\x15u\x00\x00\x00\x00\x00\x00\x00\x80',
+    ],
+    (Ecu.combinationMeter, 0x743, None): [
+      b'',
     ],
     (Ecu.hvac, 0x744, None): [
       b'5SE0A:B\x03%\x00\x00\x00\x00\x00\x03 \x00\x00\x00\x00\x00\x00\x00\x80',
@@ -88,6 +91,9 @@ FW_VERSIONS = {
     ],
     (Ecu.ipdmEr, 0x74d, None): [
       b'5SH3A\x12D\x08\x07\x00\x01\x02\x03\x05\x10\x04\x00\x02\x00\x01\x00\x00\x00\x80',
+    ],
+    (Ecu.srs, 0x752, None): [
+      b'',
     ],
     (Ecu.parkingBrake, 0x755, None): [
       b'5SA0A2B\x04\x18\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x80',
@@ -112,7 +118,7 @@ FW_VERSIONS = {
       b'5SA2B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x02\x06\x00\x00\x00\x80',
       b'5SA3B\x04AB\x071\x03\x80\x12P\x02\x03D\x00\x01\x06\x00\x00\x00\x80',
     ],
-    (Ecu.avm, 0x7b2, None): [
+    (Ecu.avm, 0x7b7, None): [
       b'',
     ],
   },
