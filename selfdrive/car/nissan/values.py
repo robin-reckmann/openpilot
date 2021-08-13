@@ -62,7 +62,7 @@ FW_VERSIONS = {
     # 2018 Leaf IC - UDM / @razemio
     # Ecu, addr, subaddr
     (Ecu.fwdCamera, 0x707, None): [
-      b'',
+      b'5SK0ADB\x04\x18\x00\x00\x00\x00\x00_(5\x07\x9aQ\x00\x00\x00\x80',
     ],
     (Ecu.brake, 0x70e, None): [
       b'5SC1C\x01A\x06\x04\x07\x01\x00\x02\x00H\xaaf\xc9\x00\x00\x00\x00\x00\x80',
