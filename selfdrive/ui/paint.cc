@@ -142,8 +142,8 @@ static void ui_draw_world(UIState *s) {
   // Draw lane edges and vision/mpc tracks
   ui_draw_vision_lane_lines(s);
 
-  // Draw lead and stop line indicators if openpilot is handling longitudinal
-  if (s->scene.longitudinal_control) {
+  // Draw lead and stop line indicators always
+  if (true) {
     auto lead_one = (*s->sm)["modelV2"].getModelV2().getLeadsV3()[0];
     auto lead_two = (*s->sm)["modelV2"].getModelV2().getLeadsV3()[1];
     auto stop_line = (*s->sm)["modelV2"].getModelV2().getStopLine();
